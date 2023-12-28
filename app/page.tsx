@@ -2,8 +2,9 @@ import React from "react";
 
 function page() {
   return (
-    <div>LMS Starter</div>
+    <div>LMS Starter project</div>
   );
 }
 
 export default page;
+
