@@ -15,7 +15,7 @@ interface SideBarItemProps {
 function SideBarItem({ label, href, icon: Icon }: SideBarItemProps) {
   const route = usePathname();
   const router = useRouter();
-  const isActive = route == href;
+  const isActive = (route == "/" && href == "/") || route == href;
 
   return (
     <button
@@ -34,7 +34,7 @@ function SideBarItem({ label, href, icon: Icon }: SideBarItemProps) {
       </div>
       <div
         className={cn(` absolute opacity-0 w-1 h-full right-0 top-0  bg-sky-500
-       ${isActive ? "opacity-1" :""}
+       ${isActive ? "opacity-1" : ""}
         `)}
       ></div>
     </button>

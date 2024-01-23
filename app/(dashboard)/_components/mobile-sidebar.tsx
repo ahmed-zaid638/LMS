@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
-import SidebarRoutes from "./sidebar-routes";
 import Sidebar from "./sidebar";
 
 function MobileSidebar() {
@@ -18,7 +10,7 @@ function MobileSidebar() {
         <SheetTrigger className="">
           <AlignJustify />
         </SheetTrigger>
-        <SheetContent side="left"  className="p-0 bg-white w-52 border-r-0">
+        <SheetContent side="left" className="p-0 bg-white w-52 border-r-0">
           <Sidebar />
         </SheetContent>
       </Sheet>
