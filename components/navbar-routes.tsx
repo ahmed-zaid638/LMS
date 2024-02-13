@@ -15,9 +15,7 @@ function NavbarRoutes() {
 
   return (
     <div className="flex items-center gap-3 ">
-      <div className="">
-        {isTeacher ? <div className=""></div> : <div className=""></div>}
-
+      <div className="flex gap-2 ">
         {isTeacher || isPlayer ? (
           <Link href={"/"}>
             <Button className="" size={"sm"} variant={"ghost"}>
@@ -26,15 +24,16 @@ function NavbarRoutes() {
             </Button>
           </Link>
         ) : (
-          <Link href="/teacher/courses">
-            <Button size={"sm"} variant={"ghost"}>
-              Teacher mode
-            </Button>
-          </Link>
+          <>
+            <Link href="/teacher/courses">
+              <Button size={"sm"} variant={"ghost"}>
+                Teacher mode
+              </Button>
+            </Link>
+          </>
         )}
+        <UserButton afterSignOutUrl="/" />
       </div>
-      {/* {<UserButton
-      afterSignOutUrl="/" />} */}
     </div>
   );
 }

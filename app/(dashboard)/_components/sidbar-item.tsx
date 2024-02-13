@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
 import { LucideIcon } from "lucide-react";
+import path from "path";
 
 interface SideBarItemProps {
   label: string;
@@ -13,9 +14,9 @@ interface SideBarItemProps {
 }
 
 function SideBarItem({ label, href, icon: Icon }: SideBarItemProps) {
-  const route = usePathname();
+  const pathname = usePathname();
   const router = useRouter();
-  const isActive = (route == "/" && href == "/") || route == href;
+  const isActive = (pathname == "/" && href == "/") || pathname == href || pathname?.startsWith(`${href}/`) 
 
   return (
     <button

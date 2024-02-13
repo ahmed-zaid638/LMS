@@ -20,7 +20,7 @@ function SidebarRoutes() {
   const routes = isTeacher ? teacherRoutes : gustRoutes
 
   return (
-    <div className="pt-4">
+    <div className="pt-6">
       {routes.map((item, index) => {
         return (
           <div key={index} className="flex flex-col">
