@@ -1,4 +1,4 @@
-##Technologies Used
+## Technologies Used
 -Next.js
 -React
 -Tailwind CSS
