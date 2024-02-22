@@ -1,7 +1,7 @@
 #  Learning Management System(LMS): 🚀
 The LMS project offers comprehensive course management, secure authentication, content delivery, assessment tools, progress tracking, and engagement features. With mobile compatibility and customization options,
 
-# Skills :computer:
+# Technologies :computer:
 
   [![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,tailwindcss,shadcn)](https://skillicons.dev)
 
