@@ -1,9 +1,9 @@
 ##Technologies Used
-Next.js
-React
-Tailwind CSS
+-Next.js
+-React
+-Tailwind CSS
 
-##Contributing
+## Contributing
 Contributions to the LMS project are welcome! To contribute, please follow these steps:
 
 Fork the repository.
