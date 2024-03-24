@@ -3,7 +3,7 @@ The LMS project offers comprehensive course management, secure authentication, c
 
 # Technologies :computer:
 
-  [![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,tailwindcss,shadcn)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=nextjs,react,html,css,tailwindcss,prisma)](https://skillicons.dev)
 
 ## :collision: Features 
 
