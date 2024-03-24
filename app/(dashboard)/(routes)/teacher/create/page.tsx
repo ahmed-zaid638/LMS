@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { auth } from "@clerk/nextjs";
 
 function CreatePage() {
   const router = useRouter();
@@ -36,16 +37,17 @@ function CreatePage() {
   // onSubmit
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response = await axios.post("/api/courses", values);
+      const response = await axios.post("/api/courses" , values);
       router.push(`/teacher/courses/${response.data.id}`);
-      toast.success("asdasdfasdg");
+      console.log(response.data)
+      toast.success("Course created successfully");
 
-      console.log(values.title);
     } catch (error) {
       toast.error("something went wrong");
       console.log(error);
     }
   };
+ 
   return (
     <div className="">
       <div className="">
